@@ -4,7 +4,7 @@ Traduz ações da API para o SGBD alvo (MySQL, MariaDB, Postgre, SQLite).
 
 ## Atributos
 
-- [_readonly_] typeof Schema
+- [_readonly_] typeof Schema: [DialectSchema](#DialectSchema)
   - contém uma classe chamada _DialectSchema_ que estende de _Schema_, porém com o método construtor que cria um _Schema_ já com o atributo _Dialect_ já definido como _this_;  
 
 ### Métodos
@@ -24,7 +24,8 @@ Responsavel por:
 
 ## Métodos
 
-- [_public_|_static_] build([Dialect](#dialect))
+- construtor()
+- [_public_|_static_] build([Dialect](#dialect)): [DialectSchema](#DialectSchema)
 
 ## EntityManager
 
@@ -36,3 +37,9 @@ Responsavel por:
 ## EntityManager
 
 Responsavel por:
+
+--- 
+
+## DialectSchema
+
+...
