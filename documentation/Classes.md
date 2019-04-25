@@ -3,6 +3,10 @@ Dialect
 
 Traduz ações da API para o SGBD alvo (MySQL, MariaDB, Postgre, SQLite).
 
+## Responsavel por:
+
+- [ ] ...
+
 ### Atributos
 
 - [ ] [_readonly_] typeof Schema: [Schema_Vs_Dialect](#schema_Vs_dialect)
@@ -16,28 +20,40 @@ Traduz ações da API para o SGBD alvo (MySQL, MariaDB, Postgre, SQLite).
 - [ ] [_public_] destroyEntity([Entity](#Entity))
   - [ ] exclui dados de uma entidade no SGBD
 
+
+
+
+
 Schema
 ===
 
-Responsavel por:
+...
+
+## Responsavel por:
+
 - [ ] Criar/Atualiza/conectar no esquema relacional do SGBD
 - [ ] Transformar EntityManagers em tabelas no SGBD
 
 ### Atributos
 
-- [ ] [_public_] EntityManager: [EntityManager_Vs_Schema](#EntityManager_Vs_Schema)
+- [ ] [_readonly_] EntityManager: [EntityManager_Vs_Schema](#EntityManager_Vs_Schema)
 
 ### Métodos
-
 - [ ] construtor([Dialect](#dialect))
-- [ ] [_public_|_static_] build([Dialect](#dialect)): [Schema_Vs_Dialect](#schema_Vs_dialect)
+- [ ] [_static_] build([Dialect](#dialect)): [Schema_Vs_Dialect](#schema_Vs_dialect)
   - [ ] Factory function que constroi uma classe do tipo [Schema_Vs_Dialect](#schema_Vs_dialect)
+
+
+
 
 
 EntityManager
 ===
 
-Responsavel por:
+...
+
+## Responsavel por:
+
 - [ ] Criar moldes para criação de tabelas no banco de dados
 - [ ] Criar entidades e relacionamento com outras entidades
 - [ ] Criar novas instancias e salva-las no SGBD
@@ -47,37 +63,65 @@ Responsavel por:
 
 ### Atributos
 
-- [ ] [_public_] Entity: [Entity_Vs_ManagerEntity](#Entity_Vs_ManagerEntity)
+- [ ] [_readonly_] Entity: [Entity_Vs_ManagerEntity](#Entity_Vs_ManagerEntity)
 
 ### Métodos
 
 - [ ] construtor([Schema](#Schema))
-- [ ] [_public_|_static_] build([Schema](#Schema)): [EntityManager_Vs_Schema](#EntityManager_Vs_Schema)
+- [ ] [_static_] build([Schema](#Schema)): [EntityManager_Vs_Schema](#EntityManager_Vs_Schema)
   - [ ] Factory function que constroi uma classe do tipo [EntityManager_Vs_Schema](#EntityManager_Vs_Schema)
+
+
+
+
 
 Entity
 ===
 
-Responsavel por:
+...
+
+## Responsavel por:
+
 - [ ] Alterar dados da entidade
 - [ ] Excluir a entidade
 - [ ] Relacionar a entidade com outras entidades
 
+### Atributos
+
+- [ ] ...
+
 ### Métodos
 
 - [ ] construtor([EntityManager](#EntityManager))
-- [ ] [_public_|_static_] build([EntityManager](#EntityManager)): [Entity_Vs_EntityManager](#Entity_Vs_EntityManager)
+- [ ] [_static_] build([EntityManager](#EntityManager)): [Entity_Vs_EntityManager](#Entity_Vs_EntityManager)
   - [ ] Factory function que constroi uma classe do tipo [Entity_Vs_EntityManager](#Entity_Vs_EntityManager)
+
+
+
+
+---
+
+
+
+
 
 Schema_Vs_Dialect
 ===
 
 Classe construida em tempo de execução que estende [Schema](#Schema), setando atributo [Dialect](#Dialect) do construtor com um valor padrão, esta classe é fabricada pelo método Schema::build([Schema](#Schema)).
 
+
+
+
+
 EntityManager_Vs_Schema
 ===
 
 Classe construida em tempo de execução que estende [EntityManager](#EntityManager), setando atributo [Schema](#Schema) do construtor com um valor padrão, esta classe é fabricada pelo método EntityManager::build([EntityManager](#EntityManager)).
+
+
+
+
 
 Entity_Vs_ManagerEntity
 ===
