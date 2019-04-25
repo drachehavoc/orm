@@ -9,11 +9,11 @@ Traduz ações da API para o SGBD alvo (MySQL, MariaDB, Postgre, SQLite).
 
 ### Métodos
 
-- [_public_] createDatabase(EntityManager)
+- [_public_] createDatabase([EntityManager](#entitymanager))
   - cria uma nova tabela no SGBD com base nas informações contidas em um EntityManager
-- [_public_] storeEntity(Entity)
+- [_public_] storeEntity([Entity](#entity))
   - executa _insert_ ou _update_ dos dados da entidade no SGBD
-- [_public_] destroyEntity(Entity)
+- [_public_] destroyEntity([Entity](#entity))
   - exclui dados de uma entidade no SGBD
 
 ## Schema
@@ -24,7 +24,7 @@ Responsavel por:
 
 ## Métodos
 
-- [_public_|_static_] build(Dialect)
+- [_public_|_static_] build([Dialect](#dialect))
 
 ## EntityManager
 
