@@ -2,7 +2,7 @@
 
 Traduz ações da API para o SGBD alvo (MySQL, MariaDB, Postgre, SQLite).
 
-## Atributos
+### Atributos
 
 - [_readonly_] typeof Schema: [DialectSchema](#DialectSchema)
   - contém uma classe chamada _DialectSchema_ que estende de _Schema_, porém com o método construtor que cria um _Schema_ já com o atributo _Dialect_ já definido como _this_;  
@@ -16,16 +16,25 @@ Traduz ações da API para o SGBD alvo (MySQL, MariaDB, Postgre, SQLite).
 - [_public_] destroyEntity([Entity](#entity))
   - exclui dados de uma entidade no SGBD
 
+
+
 ## Schema
 
 Responsavel por:
 - Criar/Atualiza/conectar no esquema relacional do SGBD
 - Transformar EntityManagers em tabelas no SGBD
 
-## Métodos
+### Atributos
 
-- construtor()
+- [_public_] EntityManager: [SchemaEntityManager](#schemaentitymanager)
+
+### Métodos
+
+- construtor([Dialect](#dialect))
 - [_public_|_static_] build([Dialect](#dialect)): [DialectSchema](#DialectSchema)
+  - Factory function que constroi uma classe do tipo [DialectSchema](#DialectSchema)
+
+
 
 ## EntityManager
 
@@ -34,12 +43,38 @@ Responsavel por:
 - Criar entidades e relacionamento com outras entidades
 - Recuperar instancias/instanciar entidades recuperadas do SGBD
 
-## EntityManager
+### Atributos
+
+- [_public_] Entity: [EntityManagerEntity](#entitymanagerentity)
+
+### Métodos
+
+- construtor([Schema](#schema))
+- [_public_|_static_] build([Schema](#schema)): [SchemaEntityManager](#schemaentitymanager)
+  - Factory function que constroi uma classe do tipo [SchemaEntityManager](#schemaentitymanager)
+
+
+
+## Entity
 
 Responsavel por:
+
+
 
 --- 
 
 ## DialectSchema
+
+...
+
+
+
+## SchemaEntityManager
+
+...
+
+
+
+## EntityManagerEntity
 
 ...
