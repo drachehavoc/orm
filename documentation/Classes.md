@@ -1,10 +1,11 @@
-## Dialect
+Dialect
+-------
 
 Traduz ações da API para o SGBD alvo (MySQL, MariaDB, Postgre, SQLite).
 
 ### Atributos
 
-- [_readonly_] typeof Schema: [DialectSchema](#DialectSchema)
+- [_readonly_] typeof Schema: [SchemaWithDialect](#schemawithdialect)
   - contém uma classe chamada _DialectSchema_ que estende de _Schema_, porém com o método construtor que cria um _Schema_ já com o atributo _Dialect_ já definido como _this_;  
 
 ### Métodos
@@ -18,7 +19,11 @@ Traduz ações da API para o SGBD alvo (MySQL, MariaDB, Postgre, SQLite).
 
 
 
-## Schema
+
+
+
+Schema
+------
 
 Responsavel por:
 - Criar/Atualiza/conectar no esquema relacional do SGBD
@@ -26,17 +31,21 @@ Responsavel por:
 
 ### Atributos
 
-- [_public_] EntityManager: [SchemaEntityManager](#schemaentitymanager)
+- [_public_] EntityManager: [EntityManagerWithSchema](#entitymanagerwithschema)
 
 ### Métodos
 
 - construtor([Dialect](#dialect))
-- [_public_|_static_] build([Dialect](#dialect)): [DialectSchema](#DialectSchema)
-  - Factory function que constroi uma classe do tipo [DialectSchema](#DialectSchema)
+- [_public_|_static_] build([Dialect](#dialect)): [SchemaWithDialect](#schemawithdialect)
+  - Factory function que constroi uma classe do tipo [SchemaWithDialect](#schemawithdialect)
 
 
 
-## EntityManager
+
+
+
+EntityManager
+-------------
 
 Responsavel por:
 - Criar moldes para criação de tabelas no banco de dados
@@ -50,31 +59,36 @@ Responsavel por:
 ### Métodos
 
 - construtor([Schema](#schema))
-- [_public_|_static_] build([Schema](#schema)): [SchemaEntityManager](#schemaentitymanager)
-  - Factory function que constroi uma classe do tipo [SchemaEntityManager](#schemaentitymanager)
+- [_public_|_static_] build([Schema](#schema)): [EntityManagerWithSchema](#entitymanagerwithschema)
+  - Factory function que constroi uma classe do tipo [EntityManagerWithSchema](#entitymanagerwithschema)
 
 
 
-## Entity
 
+
+
+Entity
+---------
 Responsavel por:
 
 
 
---- 
-
-## DialectSchema
-
-...
+*************************************** 
 
 
-
-## SchemaEntityManager
+SchemaWithDialect
+-------------
 
 ...
 
 
 
-## EntityManagerEntity
+EntityManagerWithSchema
+-------------------
+
+...
+
+EntityManagerEntity
+-------------------
 
 ...
