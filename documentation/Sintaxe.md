@@ -48,3 +48,5 @@ const schema = class ExampleBlog extends dialect.Schema {
     };
 }
 ```
+
+....
