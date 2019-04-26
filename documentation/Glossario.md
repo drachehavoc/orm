@@ -4,7 +4,7 @@ Glossário
 Classe Filha Fixada
 ---
 
-São classes geradas em tempo de execução pelos métodos fabrica `Schema::build`, `EntityManager::build`, e `Entity::build`, estas classes são criadas para fixar os [elementos pai](#Elemento%20Pai) de cada uma destas classes, a fim de facilitar o relacionamento entre [elementos pai](#Elemento%20Pai) e [elementos filho](#Elemento%20Filho).
+São classes geradas em tempo de execução pelos métodos fabrica `Schema::build`, `EntityManager::build`, e `Entity::build`, estas classes são criadas para fixar os [elementos pai](#Elemento-Pai) de cada uma destas classes, a fim de facilitar o relacionamento entre [elementos pai](#Elemento-Pai) e [elementos filho](#Elemento-Filho).
 
 Maneiras Sintáticas
 ---
