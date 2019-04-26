@@ -1,19 +1,19 @@
-Dialect
+Dialect <a name="1.">#</a>
 ===
 
 Traduz ações da API para o SGBD alvo (MySQL, MariaDB, Postgre, SQLite).
 
 As classes que estendem de Dialect, permitem conexão com o banco de dados, cada classe Dialect tem um configurações específicas para o banco de dados ao qual ela prove conexão.
 
-## Responsavel por:
+## Responsavel por: <a name="1.1">#</a>
 
 - [ ] ...
 
-### Atributos
+### Atributos <a name="Dialect_1.1">#</a>
 
 - [ ] [_readonly_] typeof Schema: [Schema_Vs_Dialect](#schema_Vs_dialect)
 
-### Métodos
+### Métodos <a name="Dialect_1.2">#</a>
 
 - [ ] [_public_] createDatabase([EntityManager](#EntityManager))
   - [ ] cria uma nova tabela no SGBD com base nas informações contidas em um EntityManager
@@ -26,21 +26,22 @@ As classes que estendem de Dialect, permitem conexão com o banco de dados, cada
 
 
 
-Schema
+Schema <a name="Schema">#</a>
 ===
 
 ...
 
-## Responsavel por:
+## Responsavel por: <a name="Schema_1">#</a>
 
 - [ ] Criar/Atualiza/conectar no esquema relacional do SGBD
 - [ ] Transformar EntityManagers em tabelas no SGBD
 
-### Atributos
+### Atributos <a name="Schema_1.1">#</a>
 
 - [ ] [_readonly_] EntityManager: [EntityManager_Vs_Schema](#EntityManager_Vs_Schema)
 
-### Métodos
+### Métodos <a name="Schema_1.2">#</a>
+
 - [ ] construtor([Dialect](#dialect))
 - [ ] [_static_] build([Dialect](#dialect)): [Schema_Vs_Dialect](#schema_Vs_dialect)
   - [ ] Factory function que constroi uma classe do tipo [Schema_Vs_Dialect](#schema_Vs_dialect), fixando o parâmetro [Dialect](#dialect) do construtor como um objeto fixo.
@@ -49,12 +50,12 @@ Schema
 
 
 
-EntityManager
+EntityManager <a name="EntityManager">#</a>
 ===
 
 ...
 
-## Responsavel por:
+## Responsavel por: <a name="EntityManager_1">#</a>
 
 - [ ] Criar moldes para criação de tabelas no banco de dados
 - [ ] Criar entidades e relacionamento com outras entidades
@@ -63,11 +64,11 @@ EntityManager
 - [ ] Descrever os campos das entidades
 - [ ] Descrever os relacionamentos entre as entidades
 
-### Atributos
+### Atributos <a name="EntityManager_1.1">#</a>
 
 - [ ] [_readonly_] Entity: [Entity_Vs_ManagerEntity](#Entity_Vs_ManagerEntity)
 
-### Métodos
+### Métodos <a name="EntityManager_1.2">#</a>
 
 - [ ] construtor([Schema](#Schema))
 - [ ] [_static_] build([Schema](#Schema)): [EntityManager_Vs_Schema](#EntityManager_Vs_Schema)
