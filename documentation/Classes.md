@@ -3,6 +3,8 @@ Dialect
 
 Traduz ações da API para o SGBD alvo (MySQL, MariaDB, Postgre, SQLite).
 
+As classes que estendem de Dialect, permitem conexão com o banco de dados, cada classe Dialect tem um configurações específicas para o banco de dados ao qual ela prove conexão.
+
 ## Responsavel por:
 
 - [ ] ...

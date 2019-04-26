@@ -1,9 +1,32 @@
 Schema
 ===
 
-```ts
+Antes de criar um esquema será preciso intanciar uma classe [Dialect](Classes.md#dialect), no exemplo a seguir temos a classe (MySQL)[ClassesDialect.md#MySQL]:
 
-const dialect = new Dialect();
+```ts
+import morango from "./morango";
+const dialect = new morango.MySQL({ 
+    host: 'localhost',
+    user: 'root',
+    database: 'test'
+ }); 
+```
+
+com o um objeto do tipo Dialect instanciado você pode criar um novo esquema, existem duas maneiras disto ser feito, apelidamos estas maneiras de __aninhado__ e __degarrado__ (confira em nosso glossário)[Glossario.md#Maneiras Sintáticas]
+
+Aninhado
+---
+
+```ts
+```
+
+Desgarrado
+---
+
+```ts
+```
+
+```ts
 
 const schema = class ___NOME_DO_SCHEMA__ extends dialect.Schema {
     @notExposed | @exposed
