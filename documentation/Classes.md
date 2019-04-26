@@ -1,4 +1,4 @@
-Dialect <a name="1.">#</a>
+Dialect AAAA <a name="1.">#</a>
 ===
 
 Traduz ações da API para o SGBD alvo (MySQL, MariaDB, Postgre, SQLite).
