@@ -1,4 +1,10 @@
-Schema_Vs_Dialect {#asd}
+### Dunha nome [teste] ##
+
+[teste](#teste)
+
+
+
+Schema_Vs_Dialect 
 ===
 
 Classe construida em tempo de execução que estende [Schema](#Schema), setando atributo [Dialect](#Dialect) do construtor com um valor padrão, esta classe é fabricada pelo método Schema::build([Schema](#Schema)).
