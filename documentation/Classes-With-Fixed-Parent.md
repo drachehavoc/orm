@@ -4,7 +4,7 @@
 
 
 
-Schema_Vs_Dialect # <a name=1.1>#</a>
+Schema_Vs_Dialect # <br name=1.1>
 ===
 
 Classe construida em tempo de execução que estende [Schema](#Schema), setando atributo [Dialect](#Dialect) do construtor com um valor padrão, esta classe é fabricada pelo método Schema::build([Schema](#Schema)).
