@@ -43,7 +43,7 @@ Schema
 ### Métodos
 - [ ] construtor([Dialect](#dialect))
 - [ ] [_static_] build([Dialect](#dialect)): [Schema_Vs_Dialect](#schema_Vs_dialect)
-  - [ ] Factory function que constroi uma classe do tipo [Schema_Vs_Dialect](#schema_Vs_dialect)
+  - [ ] Factory function que constroi uma classe do tipo [Schema_Vs_Dialect](#schema_Vs_dialect), fixando o parâmetro [Dialect](#dialect) do construtor como um objeto fixo.
 
 
 
@@ -71,7 +71,7 @@ EntityManager
 
 - [ ] construtor([Schema](#Schema))
 - [ ] [_static_] build([Schema](#Schema)): [EntityManager_Vs_Schema](#EntityManager_Vs_Schema)
-  - [ ] Factory function que constroi uma classe do tipo [EntityManager_Vs_Schema](#EntityManager_Vs_Schema)
+  - [ ] Factory function que constroi uma classe do tipo [EntityManager_Vs_Schema](#EntityManager_Vs_Schema), fixando o parâmetro [Schema](#Schema) do construtor como um objeto fixo.
 
 
 
@@ -96,7 +96,7 @@ Entity
 
 - [ ] construtor([EntityManager](#EntityManager))
 - [ ] [_static_] build([EntityManager](#EntityManager)): [Entity_Vs_EntityManager](#Entity_Vs_EntityManager)
-  - [ ] Factory function que constroi uma classe do tipo [Entity_Vs_EntityManager](#Entity_Vs_EntityManager)
+  - [ ] Factory function que constroi uma classe do tipo [Entity_Vs_EntityManager](#Entity_Vs_EntityManager), fixando o parâmetro [EntityManager](#EntityManager) do construtor como um objeto fixo.
 
 
 
