@@ -1,4 +1,15 @@
 import Dialect from "./Dialect"
+import Schema from "./Schema"
+import EntityManager from "./EntityManager"
+import types from "./types"
+
+export { 
+    types 
+};
+
 export default {
-    Dialect
-}
+    Dialect,
+    Schema,
+    EntityManager,
+    types
+};
